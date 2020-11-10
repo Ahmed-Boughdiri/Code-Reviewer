@@ -1,0 +1,12 @@
+from Classes.code import Code
+
+def main():
+    f = open("code.txt","r+").read()
+    code = Code(f)
+    code.split()
+    code.splitKeywork()
+    result = code.analyze()
+    print(result.assign_operations)
+    
+
+main()
